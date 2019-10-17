@@ -5,11 +5,11 @@ body.claro{
    background-color: aliceblue;
 }
 body.obscuro{
-   background-color: cadetblue;
+   background-color: rgb(0, 0, 0);
 }
 
 button{
-   background-color: greenyellow;
+   background-color:burlywood;
    width: 100%;
    padding: 30px;
    font-size: 1em;
@@ -17,7 +17,7 @@ button{
 }
 
 div{
-   background-color: greenyellow;
+   background-color: maroon;
    width: 100%;
    height: 40vh;
    margin-top: 10px;
@@ -31,48 +31,48 @@ h1{
 }
 
 #zona-gestos.tap{
-   -webkit-animation: click 1.5s 1;
+   animation: click 1.5s 1;
 }
 
 #zona-gestos.doubletap{
-   -webkit-animation: pulsacion 1.5s 1;
+   animation: pulsacion 1.5s 1;
 }
 
 #zona-gestos.press{
-   -webkit-animation: presion 1.5s 1;
+   animation: presion 1.5s 1;
 }
 #zona-gestos.swipeD{
-   -webkit-animation: swipeDerecha 2s 1;
+   animation: swipeDerecha 2s 1;
 }
 #zona-gestos.swipeI{
-   -webkit-animation: swipeIzquierda 2s 1;
+   animation: swipeIzquierda 2s 1;
 }
 #zona-gestos.rotate-R{
-   -webkit-animation: rotarR 2s 1;
+   animation: rotarR 2s 1;
 }
 #zona-gestos.rotate-L{
-   -webkit-animation: rotarL 2s 1;
+   animation: rotarL 2s 1;
 }
 
-@-webkit-keyframes click {
+@keyframes click {
    0%, 100%{
-       background-color: greenyellow;
+       background-color: aquamarine;
    }
    50%{
        background-color: blue;
    }
 }
 
-@-webkit-keyframes pulsacion{
+@keyframes pulsacion{
    0%, 100%{
-       background-color: greenyellow;
+       background-color: aquamarine;
    }
    50%{
        background-color: rgb(238, 250, 221);
    }
 }
 
-@-webkit-keyframes presion{
+@keyframes presion{
    0%, 100%{
        background-color: greenyellow;
    }
@@ -81,7 +81,7 @@ h1{
    }
 }
 
-@-webkit-keyframes swipeDerecha{
+@keyframes swipeDerecha{
    0%, 100%{
        margin-left: 0%;
    }
@@ -89,7 +89,7 @@ h1{
        margin-left: 100%;
    }
 }
-@-webkit-keyframes swipeIzquierda{
+@keyframes swipeIzquierda{
    0%, 100%{
        width: 100%;
    }
@@ -98,12 +98,12 @@ h1{
    }
 }
 
-@-webkit-keyframes rotarR{
+@keyframes rotarR{
    100%{
        -webkit-transform: rotate(360deg);
    }
 }
-@-webkit-keyframes rotarL{
+@keyframes rotarL{
    100%{
        -webkit-transform: rotate(-360deg);
    }
